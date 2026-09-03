@@ -1,0 +1,418 @@
+{
+  "tabs": [
+    {
+      "id": "178783913151728th",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "PUT",
+      "url": "http://localhost:3000/pessoas/KWAzFpSghnY",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "connection": "keep-alive",
+          "content-length": "77",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Thu, 03 Sep 2026 19:18:58 GMT",
+          "etag": "W/\"4d-cJJKsQHdvQdaxdnMC7CbXr9WhGE\"",
+          "keep-alive": "timeout=5",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}",
+        "time": 26,
+        "size": 77,
+        "actualRequest": {
+          "method": "PUT",
+          "url": "http://localhost:3000/pessoas/KWAzFpSghnY",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "body": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 26
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1787838814958ej4z",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "POST",
+      "url": "http://localhost:3000/pessoas/",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"id\": \"10\",\n  \"nome\": \"apagueme\",\n  \"idade\": 30,\n  \"email\": \"apagueme@example.com\"\n}"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 400,
+        "statusText": "Bad Request",
+        "headers": {
+          "connection": "keep-alive",
+          "content-length": "49",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Thu, 27 Aug 2026 18:06:33 GMT",
+          "etag": "W/\"31-6RStZEl0gRaJNkUEwT/aD+uXtcM\"",
+          "keep-alive": "timeout=5",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"erro\":\"A idade deve estar entre 0 e 120 anos.\"}",
+        "time": 25,
+        "size": 49,
+        "actualRequest": {
+          "method": "POST",
+          "url": "http://localhost:3000/pessoas/",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "body": "{\n  \"id\": \"10\",\n  \"nome\": \"apagueme\",\n  \"idade\": 30,\n  \"email\": \"apagueme@example.com\"\n}",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 25
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "1787839186540fouq",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "PUT",
+      "url": "http://localhost:3000/pessoas/d1lpLRB_tM8",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "json",
+        "raw": "  {\n    \"id\": \"d1lpLRB_tM8\",\n    \"nome\": \"Guilherme\",\n    \"idade\": 19,\n    \"email\": \"guilherme@example.com\"\n  }\n"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 200,
+        "statusText": "OK",
+        "headers": {
+          "connection": "keep-alive",
+          "content-length": "82",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Thu, 27 Aug 2026 17:21:45 GMT",
+          "etag": "W/\"52-iajzhbxhuk3Y99UsJGFmkTu5GJA\"",
+          "keep-alive": "timeout=5",
+          "x-powered-by": "Express"
+        },
+        "body": "{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"}",
+        "time": 26,
+        "size": 82,
+        "actualRequest": {
+          "method": "PUT",
+          "url": "http://localhost:3000/pessoas/d1lpLRB_tM8",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "body": "  {\n    \"id\": \"d1lpLRB_tM8\",\n    \"nome\": \"Guilherme\",\n    \"idade\": 19,\n    \"email\": \"guilherme@example.com\"\n  }\n",
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 26
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    },
+    {
+      "id": "17878457601528sp8",
+      "tabKind": "request",
+      "name": "New Request",
+      "method": "DELETE",
+      "url": "http://localhost:3000/pessoas/0kBMxXhvvzs",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true,
+      "inheritScripts": false,
+      "preRequestScript": "",
+      "testScript": "",
+      "testRules": [],
+      "setVariables": [],
+      "activeTab": "body",
+      "sourceRequestId": null,
+      "sourceCollectionId": null,
+      "sourceFolderPath": null,
+      "sourceScope": "local",
+      "proxyId": null,
+      "certificateConfig": null,
+      "inheritCertificate": false,
+      "response": {
+        "status": 204,
+        "statusText": "No Content",
+        "headers": {
+          "connection": "keep-alive",
+          "date": "Thu, 27 Aug 2026 18:06:47 GMT",
+          "keep-alive": "timeout=5",
+          "x-powered-by": "Express"
+        },
+        "body": "",
+        "time": 11,
+        "size": 0,
+        "actualRequest": {
+          "method": "DELETE",
+          "url": "http://localhost:3000/pessoas/0kBMxXhvvzs",
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "body": null,
+          "protocol": "HTTP/1.1",
+          "certificateNames": "System Trust Store"
+        },
+        "cookies": [],
+        "timingPhases": [
+          {
+            "name": "Environment",
+            "duration": 1
+          },
+          {
+            "name": "Auth",
+            "duration": 0
+          },
+          {
+            "name": "HTTP Request",
+            "duration": 11
+          },
+          {
+            "name": "Post-processing",
+            "duration": 0
+          }
+        ]
+      },
+      "error": null,
+      "loading": false,
+      "wsConnected": false,
+      "wsUrl": null,
+      "wsMessages": [],
+      "groupId": null,
+      "mcpDescription": "",
+      "mcpInputSchema": "",
+      "collectionId": null,
+      "folderId": null,
+      "folderPath": null,
+      "editorScope": "local",
+      "grpcConnected": false,
+      "grpcStreaming": false,
+      "responseTab": "body"
+    }
+  ],
+  "groups": [],
+  "activeTabId": "178783913151728th",
+  "currentView": "requests",
+  "sidebarTab": "collections",
+  "sidebarCollapsed": true,
+  "responseTab": "body",
+  "layoutMode": "horizontal",
+  "splitRatio": 0.5,
+  "horizontalSplitRatio": 0.5,
+  "selectedMockServerId": null
+}
