@@ -4,23 +4,24 @@
       "id": "178783913151728th",
       "tabKind": "request",
       "name": "New Request",
-      "method": "PUT",
-      "url": "http://localhost:3000/pessoas/KWAzFpSghnY",
-      "params": [],
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
       "headers": [
         {
           "key": "Accept",
           "value": "application/json",
           "enabled": true
-        },
-        {
-          "key": "Content-Type",
-          "value": "application/json",
-          "enabled": true
         }
       ],
       "body": {
-        "type": "json",
+        "type": "none",
         "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
       },
       "auth": {
@@ -45,24 +46,23 @@
         "statusText": "OK",
         "headers": {
           "connection": "keep-alive",
-          "content-length": "77",
+          "content-length": "1000",
           "content-type": "application/json; charset=utf-8",
-          "date": "Thu, 03 Sep 2026 19:18:58 GMT",
-          "etag": "W/\"4d-cJJKsQHdvQdaxdnMC7CbXr9WhGE\"",
+          "date": "Thu, 03 Sep 2026 20:36:37 GMT",
+          "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
           "keep-alive": "timeout=5",
           "x-powered-by": "Express"
         },
-        "body": "{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}",
-        "time": 26,
-        "size": 77,
+        "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+        "time": 8,
+        "size": 1000,
         "actualRequest": {
-          "method": "PUT",
-          "url": "http://localhost:3000/pessoas/KWAzFpSghnY",
+          "method": "GET",
+          "url": "http://localhost:3000/pessoas?idadeMax=30",
           "headers": {
-            "Accept": "application/json",
-            "Content-Type": "application/json"
+            "Accept": "application/json"
           },
-          "body": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }",
+          "body": null,
           "protocol": "HTTP/1.1",
           "certificateNames": "System Trust Store"
         },
@@ -78,7 +78,7 @@
           },
           {
             "name": "HTTP Request",
-            "duration": 26
+            "duration": 8
           },
           {
             "name": "Post-processing",
