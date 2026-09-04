@@ -4,12 +4,14 @@ Um trabalho da faculdade, especificamente de back-end, sobre resumidamente fazer
 # Tutorial de como instalar essa joça:
 ## Como instalar o projeto;
 
+
 ### Você vai precisar das seguintes coisas:
 
 * **[Git](https://git-scm.com/)**
 * **[Node.js](https://nodejs.org/)** (versão LTS recomendada, inclui o `npm`)
 * Uma pasta vazia pra salvar o projeto obviamente é necessária
 * OPCIONAL: pix no número 44 99142-8080 pra fazer um churrasco ou comer no Cantinho da Costela.
+
 
 ### Instalando o projeto:
 
@@ -20,6 +22,7 @@ Um trabalho da faculdade, especificamente de back-end, sobre resumidamente fazer
 3.Rode este comando para instalar os pacotes necessários para o projeto:
   npm install
 
+
 # Rodando o projeto:
 
 Como executar o JSON Server: 
@@ -27,6 +30,7 @@ npm run server
 
 Como executar o Express:
 npm start
+
 
 # Quais são as rotas disponíveis?
 
@@ -36,19 +40,24 @@ npm start
 - Modificação de Dados do Usuário: /pessoas/:id
 - Remoção de Usuário: /pessoas/:id
 
+
 # Quais são as regras de validação?
 
 O sistema impede a criação de usuários com nome, email e idades vazios, além dos emails serem obrigados a terem pelo menos @ para serem criados, além de obviamente impedir a inserção no campo idade com QUALQUER letra ou caractere que não for número.
 
+
 # Como utilizar os filtros?
 
 ## Filtros de Idade:
+
 Para usar os filtros de idade, segue os exemplos:
 ### Idade Específica: http://localhost:3000/pessoas?idade=30 
 ### Idade Máxima: http://localhost:3000/pessoas?idadeMax=100
 ### Idade Mínima: http://localhost:3000/pessoas?idadeMin=18
 
+
 ## Filtro de Inicial:
+
 Para usar o filtro de inicial de nome, segue o exemplo abaixo:
 ### Inicial: http://localhost:3000/pessoas?nome=m
 
