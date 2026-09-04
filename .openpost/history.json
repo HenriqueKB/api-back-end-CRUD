@@ -6354,5 +6354,1062 @@
       "size": 1000,
       "cookies": []
     }
+  },
+  {
+    "id": "1788523877250",
+    "timestamp": 1788523877250,
+    "request": {
+      "id": "1788523877203",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas/?idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:11:17 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 43,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788523883633",
+    "timestamp": 1788523883633,
+    "request": {
+      "id": "1788523883620",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:11:23 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 9,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788523994754",
+    "timestamp": 1788523994754,
+    "request": {
+      "id": "1788523994706",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:13:14 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 44,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788523999673",
+    "timestamp": 1788523999673,
+    "request": {
+      "id": "1788523999661",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas/?idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:13:19 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 10,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524012509",
+    "timestamp": 1788524012509,
+    "request": {
+      "id": "1788524012498",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas/?idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:13:32 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 9,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524019112",
+    "timestamp": 1788524019112,
+    "request": {
+      "id": "1788524019102",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas/?idadeMin=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:13:39 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 7,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524025452",
+    "timestamp": 1788524025452,
+    "request": {
+      "id": "1788524025442",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas/?idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:13:45 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 8,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524031077",
+    "timestamp": 1788524031077,
+    "request": {
+      "id": "1788524031068",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas/?idadeMax=1",
+      "params": [
+        {
+          "key": "idadeMax",
+          "value": "1",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:13:51 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 7,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524031686",
+    "timestamp": 1788524031686,
+    "request": {
+      "id": "1788524031678",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas/?idadeMax=1",
+      "params": [
+        {
+          "key": "idadeMax",
+          "value": "1",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:13:51 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 7,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524105319",
+    "timestamp": 1788524105319,
+    "request": {
+      "id": "1788524105303",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas/pessoas?idadeMin=18&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "18",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 500,
+      "statusText": "Internal Server Error",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "35",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:15:05 GMT",
+        "etag": "W/\"23-aJcosZROTl5YwUQ6Fo0A1H1dh5s\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "Request failed with status code 404",
+      "time": 12,
+      "size": 35,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524116626",
+    "timestamp": 1788524116626,
+    "request": {
+      "id": "1788524116612",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas/pessoas/?idadeMin=18&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "18",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 500,
+      "statusText": "Internal Server Error",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "35",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:15:16 GMT",
+        "etag": "W/\"23-aJcosZROTl5YwUQ6Fo0A1H1dh5s\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "Request failed with status code 404",
+      "time": 10,
+      "size": 35,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524117162",
+    "timestamp": 1788524117162,
+    "request": {
+      "id": "1788524117150",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas/pessoas/?idadeMin=18&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "18",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 500,
+      "statusText": "Internal Server Error",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "35",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:15:17 GMT",
+        "etag": "W/\"23-aJcosZROTl5YwUQ6Fo0A1H1dh5s\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "Request failed with status code 404",
+      "time": 7,
+      "size": 35,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524117318",
+    "timestamp": 1788524117318,
+    "request": {
+      "id": "1788524117309",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas/pessoas/?idadeMin=18&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "18",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 500,
+      "statusText": "Internal Server Error",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "35",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:15:17 GMT",
+        "etag": "W/\"23-aJcosZROTl5YwUQ6Fo0A1H1dh5s\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "Request failed with status code 404",
+      "time": 7,
+      "size": 35,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524141428",
+    "timestamp": 1788524141428,
+    "request": {
+      "id": "1788524141417",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas/pessoas?idadeMin=1&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 500,
+      "statusText": "Internal Server Error",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "35",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:15:41 GMT",
+        "etag": "W/\"23-aJcosZROTl5YwUQ6Fo0A1H1dh5s\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "Request failed with status code 404",
+      "time": 8,
+      "size": 35,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524151581",
+    "timestamp": 1788524151581,
+    "request": {
+      "id": "1788524151572",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:15:51 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 7,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524214026",
+    "timestamp": 1788524214026,
+    "request": {
+      "id": "1788524214018",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 4,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524220079",
+    "timestamp": 1788524220079,
+    "request": {
+      "id": "1788524220073",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 2,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524220494",
+    "timestamp": 1788524220494,
+    "request": {
+      "id": "1788524220489",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 2,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524220769",
+    "timestamp": 1788524220769,
+    "request": {
+      "id": "1788524220760",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 0,
+      "statusText": "Error",
+      "headers": {},
+      "body": "Request failed: fetch failed",
+      "time": 6,
+      "size": 0,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524254120",
+    "timestamp": 1788524254120,
+    "request": {
+      "id": "1788524254074",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:17:34 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 43,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524260282",
+    "timestamp": 1788524260282,
+    "request": {
+      "id": "1788524260271",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:17:40 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 8,
+      "size": 1000,
+      "cookies": []
+    }
   }
 ]

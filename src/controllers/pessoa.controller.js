@@ -33,7 +33,7 @@ const buscarPessoaPeloId = async (req, res) => {
     }
 }
 
-const filtroDeIdade = async (req, res) => {
+/*const filtroDeIdade = async (req, res) => {
     const idade = req.params.idade
     
 
@@ -43,21 +43,21 @@ const filtroDeIdade = async (req, res) => {
 
 
         //Filtro 1: Idade Exata (?idade=30)
-        if (idade !== undefined) {
+       if (idade !== undefined && idade !== '') {
             const idadeNum = Number(idade);
-            pessoas = pessoas.filter(p => Number(p.idade) === idadeNum);
+            pessoas = pessoas.filter(p => p.idade === idadeNum);
         }
 
-        //Filtro 2: Idade Mínima (?idadeMin=18)
-        if (idadeMin !== undefined) {
+        // Filtro 2: Idade Mínima (?idadeMin=18)
+        if (idadeMin !== undefined && idadeMin !== '') {
             const minNum = Number(idadeMin);
-            pessoas = pessoas.filter(p => Number(p.idade) >= minNum);
+            pessoas = pessoas.filter(p => p.idade >= minNum);
         }
 
-        //Filtro 3: Idade Máxima (?idadeMax=30)
-        if (idadeMax !== undefined) {
+        // Filtro 3: Idade Máxima (?idadeMax=30)
+        if (idadeMax !== undefined && idadeMax !== '') {
             const maxNum = Number(idadeMax);
-            pessoas = pessoas.filter(p => Number(p.idade) <= maxNum);
+            pessoas = pessoas.filter(p => p.idade <= maxNum);
         }
 
         return res.json(pessoas);
@@ -66,7 +66,41 @@ const filtroDeIdade = async (req, res) => {
         console.error('Erro ao buscar pessoas:', error);
         return res.status(500).json({ erro: 'Erro interno ao buscar pessoas.' });
     }
-}
+}*/
+
+const filtroDeIdade = async (req, res) => {
+    try {
+        let pessoas = await pessoaService.find();
+
+        console.log("--- TESTE DE DIAGNÓSTICO ---");
+        console.log("1. Query Params recebidos:", req.query);
+        console.log("2. Total de pessoas vindas do Service:", pessoas ? pessoas.length : "NULO");
+        console.log("3. Estrutura da primeira pessoa:", pessoas[0]);
+
+        const { idade, idadeMax, idadeMin } = req.query;
+
+        if (idade !== undefined && idade !== '') {
+            pessoas = pessoas.filter(p => Number(p.idade) === Number(idade));
+        }
+
+        if (idadeMin !== undefined && idadeMin !== '') {
+            pessoas = pessoas.filter(p => Number(p.idade) >= Number(idadeMin));
+        }
+
+        if (idadeMax !== undefined && idadeMax !== '') {
+            pessoas = pessoas.filter(p => Number(p.idade) <= Number(idadeMax));
+        }
+
+        console.log("4. Total de pessoas APÓS o filtro:", pessoas.length);
+        console.log("----------------------------");
+
+        return res.json(pessoas);
+
+    } catch (error) {
+        console.error('Erro ao buscar pessoas:', error);
+        return res.status(500).json({ erro: 'Erro interno ao buscar pessoas.' });
+    }
+};
 const criarPessoa = async (req, res) => {
     const pessoa = req.body;
     
