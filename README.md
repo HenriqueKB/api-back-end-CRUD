@@ -42,19 +42,19 @@ O sistema impede a criação de usuários com nome, email e idades vazios, além
 
 # Como utilizar os filtros?
 
-#### Filtros de Idade:
+## Filtros de Idade:
 Para usar os filtros de idade, segue os exemplos:
-##### Idade Específica: http://localhost:3000/pessoas?idade=30 
-##### Idade Máxima: http://localhost:3000/pessoas?idadeMax=100
-##### Idade Mínima: http://localhost:3000/pessoas?idadeMin=18
+### Idade Específica: http://localhost:3000/pessoas?idade=30 
+### Idade Máxima: http://localhost:3000/pessoas?idadeMax=100
+### Idade Mínima: http://localhost:3000/pessoas?idadeMin=18
 
-#### Filtro de Inicial:
+## Filtro de Inicial:
 Para usar o filtro de inicial de nome, segue o exemplo abaixo:
-##### Inicial: http://localhost:3000/pessoas?nome=m
+### Inicial: http://localhost:3000/pessoas?nome=m
 
-#### Curiosidade: Você pode usar os dois filtros juntos, conforme alguns exemplos abaixo:
-##### Pessoas a partir de 18 anos com M na inicial: http://localhost:3000/pessoas?nome=m&idadeMin=18
-##### Pessoas com até no máxima 30 anos com H na inicial: http://localhost:3000/pessoas?nome=h&idadeMax=30
-##### Pessoas com no mínimo 18 anos e no máximo 30 anos com M na inicial: http://localhost:3000/pessoas?nome=m&idadeMin=18&idadeMax=30
+## Curiosidade: Você pode usar os dois filtros juntos, conforme alguns exemplos abaixo:
+### Pessoas a partir de 18 anos com M na inicial: http://localhost:3000/pessoas?nome=m&idadeMin=18
+### Pessoas com até no máxima 30 anos com H na inicial: http://localhost:3000/pessoas?nome=h&idadeMax=30
+### Pessoas com no mínimo 18 anos e no máximo 30 anos com M na inicial: http://localhost:3000/pessoas?nome=m&idadeMin=18&idadeMax=30
 
-Como os middlewares foram implementados.
+# Como os middlewares foram implementados?
