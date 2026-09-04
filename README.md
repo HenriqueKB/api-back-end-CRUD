@@ -67,6 +67,6 @@ Para usar o filtro de inicial de nome, segue o exemplo abaixo:
 ### Pessoas com no mínimo 18 anos e no máximo 30 anos com M na inicial: http://localhost:3000/pessoas?nome=m&idadeMin=18&idadeMax=30
 
 # Como os middlewares foram implementados?
-## logMiddleware.js: Mostra no terminal a requisição feita e a rota dela.
-## idadeMiddleware.js: Intercepta a requisição e valida se a idade informada é um número válido e está dentro do limite de 0 a 120 anos.
-## errorMiddleware.js: Garante o tratamento padronizado e a verificação de integridade dos campos obrigatórios (nome e email), impedindo que a requisição prossiga caso alguma regra seja violada.
+### logMiddleware.js: Mostra no terminal a requisição feita e a rota dela.
+### idadeMiddleware.js: Intercepta a requisição e valida se a idade informada é um número válido e está dentro do limite de 0 a 120 anos.
+### errorMiddleware.js: Garante o tratamento padronizado e a verificação de integridade dos campos obrigatórios (nome e email), impedindo que a requisição prossiga caso alguma regra seja violada.
