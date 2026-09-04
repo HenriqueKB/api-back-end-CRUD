@@ -67,3 +67,6 @@ Para usar o filtro de inicial de nome, segue o exemplo abaixo:
 ### Pessoas com no mínimo 18 anos e no máximo 30 anos com M na inicial: http://localhost:3000/pessoas?nome=m&idadeMin=18&idadeMax=30
 
 # Como os middlewares foram implementados?
+
+Os middlewares foram implementados seguindo o fluxo definido, em rotas como PUT e POST, os middlewares idadeMiddleware e errorMiddleware foram implementados para verificarem se o usuário está criando um perfil de acordo com a idade de 0 a 120 anos, e se os campos email e nome não estão vazios.
+
