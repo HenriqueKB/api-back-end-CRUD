@@ -72,11 +72,6 @@ const filtroDeIdade = async (req, res) => {
     try {
         let pessoas = await pessoaService.find();
 
-        console.log("--- TESTE DE DIAGNÓSTICO ---");
-        console.log("1. Query Params recebidos:", req.query);
-        console.log("2. Total de pessoas vindas do Service:", pessoas ? pessoas.length : "NULO");
-        console.log("3. Estrutura da primeira pessoa:", pessoas[0]);
-
         const { idade, idadeMax, idadeMin } = req.query;
 
         if (idade !== undefined && idade !== '') {

@@ -7,7 +7,7 @@ const errorMiddleware = require('../middlewares/error.middleware.js');
 const router = Router();
 
 
-router.get('/pessoas', buscarTodasAsPessoas)
+//router.get('/pessoas', buscarTodasAsPessoas)
 
 router.get('/pessoas', filtroDeIdade)
 

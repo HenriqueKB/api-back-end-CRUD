@@ -517,53 +517,6 @@
     }
   },
   {
-    "id": "1787842209046",
-    "timestamp": 1787842209046,
-    "request": {
-      "id": "1787842209027",
-      "name": "New Request",
-      "method": "GET",
-      "url": "http://localhost:3000/pessoas",
-      "params": [],
-      "headers": [
-        {
-          "key": "Accept",
-          "value": "application/json",
-          "enabled": true
-        },
-        {
-          "key": "Content-Type",
-          "value": "application/json",
-          "enabled": true
-        }
-      ],
-      "body": {
-        "type": "none"
-      },
-      "auth": {
-        "type": "none"
-      },
-      "inheritAuth": true
-    },
-    "response": {
-      "status": 500,
-      "statusText": "Internal Server Error",
-      "headers": {
-        "connection": "keep-alive",
-        "content-length": "11",
-        "content-type": "text/html; charset=utf-8",
-        "date": "Thu, 27 Aug 2026 14:50:09 GMT",
-        "etag": "W/\"b-vtIvYJSrZ5HNvImfy92Jx/HTqsk\"",
-        "keep-alive": "timeout=5",
-        "x-powered-by": "Express"
-      },
-      "body": "Invalid URL",
-      "time": 17,
-      "size": 11,
-      "cookies": []
-    }
-  },
-  {
     "id": "1787842245985",
     "timestamp": 1787842245985,
     "request": {
@@ -7409,6 +7362,836 @@
       "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
       "time": 8,
       "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524293672",
+    "timestamp": 1788524293672,
+    "request": {
+      "id": "1788524293659",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:18:13 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 9,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524295086",
+    "timestamp": 1788524295086,
+    "request": {
+      "id": "1788524295074",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:18:15 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 7,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524295858",
+    "timestamp": 1788524295858,
+    "request": {
+      "id": "1788524295848",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1&idadeMax=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        },
+        {
+          "key": "idadeMax",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:18:15 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 7,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524307019",
+    "timestamp": 1788524307019,
+    "request": {
+      "id": "1788524307009",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:18:27 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 7,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524307554",
+    "timestamp": 1788524307554,
+    "request": {
+      "id": "1788524307546",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:18:27 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 6,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524307836",
+    "timestamp": 1788524307836,
+    "request": {
+      "id": "1788524307827",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:18:27 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 7,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524308378",
+    "timestamp": 1788524308378,
+    "request": {
+      "id": "1788524308368",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=1",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "1",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:18:28 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 7,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524341954",
+    "timestamp": 1788524341954,
+    "request": {
+      "id": "1788524341944",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=18",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "18",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:19:01 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 8,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524972267",
+    "timestamp": 1788524972267,
+    "request": {
+      "id": "1788524972256",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=18",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "18",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:29:32 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 8,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788524977264",
+    "timestamp": 1788524977264,
+    "request": {
+      "id": "1788524977255",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas/?idadeMin=18",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "18",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:29:37 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 7,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788525106979",
+    "timestamp": 1788525106979,
+    "request": {
+      "id": "1788525106913",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=18",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "18",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "918",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:31:46 GMT",
+        "etag": "W/\"396-D4EhNwN0babU+DT/sOgveHb4170\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 52,
+      "size": 918,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788525110837",
+    "timestamp": 1788525110837,
+    "request": {
+      "id": "1788525110824",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=18",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "18",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "918",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:31:50 GMT",
+        "etag": "W/\"396-D4EhNwN0babU+DT/sOgveHb4170\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 10,
+      "size": 918,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788525116261",
+    "timestamp": 1788525116261,
+    "request": {
+      "id": "1788525116249",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMin=30",
+      "params": [
+        {
+          "key": "idadeMin",
+          "value": "30",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "610",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:31:56 GMT",
+        "etag": "W/\"262-Z6AFGsbep+JMEaf373qIDu8sVL0\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 8,
+      "size": 610,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788525121819",
+    "timestamp": 1788525121819,
+    "request": {
+      "id": "1788525121807",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:32:01 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 8,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788525126336",
+    "timestamp": 1788525126336,
+    "request": {
+      "id": "1788525126324",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:32:06 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 9,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788525126771",
+    "timestamp": 1788525126771,
+    "request": {
+      "id": "1788525126758",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas",
+      "params": [],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "1000",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:32:06 GMT",
+        "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+      "time": 9,
+      "size": 1000,
+      "cookies": []
+    }
+  },
+  {
+    "id": "1788525141189",
+    "timestamp": 1788525141189,
+    "request": {
+      "id": "1788525141177",
+      "name": "New Request",
+      "method": "GET",
+      "url": "http://localhost:3000/pessoas?idadeMax=100",
+      "params": [
+        {
+          "key": "idadeMax",
+          "value": "100",
+          "enabled": true
+        }
+      ],
+      "headers": [
+        {
+          "key": "Accept",
+          "value": "application/json",
+          "enabled": true
+        }
+      ],
+      "body": {
+        "type": "none",
+        "raw": "{\n    \"id\": \"\",\n    \"nome\": \"Michel\",\n    \"idade\": 119,\n    \"email\": \"michel@example.com\"\n  }"
+      },
+      "auth": {
+        "type": "none"
+      },
+      "inheritAuth": true
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "711",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Fri, 04 Sep 2026 12:32:21 GMT",
+        "etag": "W/\"2c7-ePvwvR6UfVzhbztr/SfYFOpyFbo\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"}]",
+      "time": 8,
+      "size": 711,
       "cookies": []
     }
   }

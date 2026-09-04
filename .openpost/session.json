@@ -5,16 +5,11 @@
       "tabKind": "request",
       "name": "New Request",
       "method": "GET",
-      "url": "http://localhost:3000/pessoas?idadeMin=1&idadeMax=30",
+      "url": "http://localhost:3000/pessoas?idadeMax=100",
       "params": [
         {
-          "key": "idadeMin",
-          "value": "1",
-          "enabled": true
-        },
-        {
           "key": "idadeMax",
-          "value": "30",
+          "value": "100",
           "enabled": true
         }
       ],
@@ -51,19 +46,19 @@
         "statusText": "OK",
         "headers": {
           "connection": "keep-alive",
-          "content-length": "1000",
+          "content-length": "711",
           "content-type": "application/json; charset=utf-8",
-          "date": "Fri, 04 Sep 2026 12:17:40 GMT",
-          "etag": "W/\"3e8-KzsR27bnXdrIeOZfb/AuOzEz/GE\"",
+          "date": "Fri, 04 Sep 2026 12:32:21 GMT",
+          "etag": "W/\"2c7-ePvwvR6UfVzhbztr/SfYFOpyFbo\"",
           "keep-alive": "timeout=5",
           "x-powered-by": "Express"
         },
-        "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"usd-iUl9PtY\",\"nome\":\"apagueme\",\"idade\":118,\"email\":\"apagueme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"},{\"id\":\"DJHFA2O6Q2A\",\"nome\":\"testeIDADEMiddleware2\",\"idade\":120,\"email\":\"\"},{\"id\":\"bQRcEDcuCUQ\",\"nome\":\"\",\"idade\":120,\"email\":\"\"},{\"id\":\"KWAzFpSghnY\",\"nome\":\"Michel\",\"idade\":119,\"email\":\"michel@example.com\"}]",
+        "body": "[{\"id\":\"X42PEFXMNFk\",\"nome\":\"Allan\",\"idade\":39,\"email\":\"allan@example.com\"},{\"id\":\"a4ewPSoUyxM\",\"nome\":\"Ronaldo\",\"idade\":49,\"email\":\"ronaldo@example.com\"},{\"id\":\"tODKTjlFvRY\",\"nome\":\"Pedro\",\"idade\":19,\"email\":\"pedro@example.com\"},{\"id\":\"6YvGL7uaFlk\",\"nome\":\"Julia\",\"idade\":21,\"email\":\"julia@example.com\"},{\"id\":\"yu-SGwQ3500\",\"nome\":\"Maria\",\"idade\":27,\"email\":\"maria@example.com\"},{\"id\":\"kcxyl7R4AN0\",\"nome\":\"Claudete\",\"idade\":67,\"email\":\"claudete@example.com\"},{\"id\":\"1PY9aP_DJp4\",\"nome\":\"Mefibosete\",\"idade\":87,\"email\":\"mefibosete@example.com\"},{\"id\":\"d1lpLRB_tM8\",\"nome\":\"Guilherme\",\"idade\":19,\"email\":\"guilherme@example.com\"},{\"id\":\"6jIJUxHjI9k\",\"nome\":\"testePOST\",\"idade\":1,\"email\":\"testePOST@example.com\"}]",
         "time": 8,
-        "size": 1000,
+        "size": 711,
         "actualRequest": {
           "method": "GET",
-          "url": "http://localhost:3000/pessoas?idadeMin=1&idadeMax=30",
+          "url": "http://localhost:3000/pessoas?idadeMax=100",
           "headers": {
             "Accept": "application/json"
           },
