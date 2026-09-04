@@ -38,13 +38,9 @@ const filtroDeIdade = async (req, res) => {
     
 
     try {
-        const pessoas = await pessoaService.find();
+        let pessoas = await pessoaService.find();
         const { idade, idadeMax, idadeMin } = req.query;
 
-        //res.send(pessoas)
-
-
-        
 
         //Filtro 1: Idade Exata (?idade=30)
         if (idade !== undefined) {
