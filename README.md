@@ -20,7 +20,7 @@ Um trabalho da faculdade, especificamente de back-end, sobre resumidamente fazer
 3.Rode este comando para instalar os pacotes necessários para o projeto:
   npm install
 
-### Rodando o projeto:
+# Rodando o projeto:
 
 Como executar o JSON Server: 
 npm run server
@@ -28,7 +28,7 @@ npm run server
 Como executar o Express:
 npm start
 
-### Quais são as rotas disponíveis?
+# Quais são as rotas disponíveis?
 
 - Criação de Usuário: /pessoas
 - Busca de Usuário: /pessoas
@@ -36,11 +36,11 @@ npm start
 - Modificação de Dados do Usuário: /pessoas/:id
 - Remoção de Usuário: /pessoas/:id
 
-### Quais são as regras de validação?
+# Quais são as regras de validação?
 
 O sistema impede a criação de usuários com nome, email e idades vazios, além dos emails serem obrigados a terem pelo menos @ para serem criados, além de obviamente impedir a inserção no campo idade com QUALQUER letra ou caractere que não for número.
 
-### Como utilizar os filtros?
+# Como utilizar os filtros?
 
 #### Filtros de Idade:
 Para usar os filtros de idade, segue os exemplos:
