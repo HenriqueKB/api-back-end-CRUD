@@ -1,6 +1,6 @@
 
 const { Router } = require('express');
-const { buscarTodasAsPessoas, buscarPessoaPeloId, criarPessoa, atualizarDados, deletarPessoa } = require('../controllers/pessoa.controller.js');
+const { buscarTodasAsPessoas, buscarPessoaPeloId, criarPessoa, atualizarDados, deletarPessoa, filtroDeIdade } = require('../controllers/pessoa.controller.js');
 const idadeMiddleware = require('../middlewares/idade.middleware.js');
 const errorMiddleware = require('../middlewares/error.middleware.js');
 
@@ -8,6 +8,8 @@ const router = Router();
 
 
 router.get('/pessoas', buscarTodasAsPessoas)
+
+router.get('/pessoas', filtroDeIdade)
 
 router.get('/pessoas/:id', buscarPessoaPeloId)
 
